@@ -1,0 +1,25 @@
+BOW & BLOOM — HOW TO ADD PRODUCTS
+
+1. Put the new product photo in this same folder as index.html.
+   Example: pink.jpg
+
+2. Open products.js.
+
+3. Copy the example product block and change:
+   name   = product name
+   price  = price in rupees
+   image  = exact photo filename
+   description = short product description
+
+4. Save products.js.
+
+5. Upload the whole folder again to your hosting provider.
+
+IMPORTANT:
+- Keep index.html, products.js and all product photos in the same folder.
+- Do not rename index.html.
+- The WhatsApp number is already set to 9503294099.
+- The UPI ID is already set to mustakpatell03@ybl.
+
+EASIEST OPTION:
+If you don't want to edit files yourself, send me each new product's photo + name + price + short description and I can update the website for you.

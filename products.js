@@ -8,7 +8,11 @@ const PRODUCTS = [
   {
     name: "Please Look Me 2-in-1 Powder",
     price: 200,
-    image: "powder.jpg",
+    images: [
+      "powder.jpg",
+      "images.jpg",
+      "images (1).jpg"
+    ],
     description: "Please Look Me 2-in-1 Powder — ₹200."
   }
 ];

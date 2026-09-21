@@ -9,6 +9,6 @@ const PRODUCTS = [
     name: "Please Look Me 2-in-1 Powder",
     price: 200,
     image: "powder.jpg",
-    description: "Please Look Me Essence Whitening 2-in-1 Powder."
+    description: "Please Look Me 2-in-1 Powder — ₹200."
   }
 ];

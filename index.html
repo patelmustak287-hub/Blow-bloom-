@@ -28,6 +28,27 @@ section{max-width:1180px;margin:auto;padding:55px 6%}.section-title{text-align:c
 .order{background:#fff;border:1px solid var(--line);border-radius:24px;padding:35px;max-width:720px;margin:auto;text-align:center}.order input,.order textarea{width:100%;padding:14px;margin:8px 0;border:1px solid #ddd;border-radius:12px;font:inherit}.order textarea{min-height:90px;resize:vertical}
 footer{padding:30px 6%;text-align:center;color:var(--muted);font-size:13px}
 @media(max-width:800px){.hero{grid-template-columns:1fr;padding-top:45px}.products,.features{grid-template-columns:1fr}.nav a{display:none}.hero-img{max-height:430px;object-fit:cover}}
+.product-photos{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:6px;
+  padding:6px;
+  background:#fff;
+}
+
+.product-photos img{
+  width:100%;
+  height:220px;
+  object-fit:contain;
+  background:#fff;
+  border-radius:10px;
+}
+
+@media(max-width:800px){
+  .product-photos img{
+    height:180px;
+  }
+}
 </style>
 </head>
 <body>

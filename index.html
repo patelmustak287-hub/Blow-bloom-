@@ -90,8 +90,35 @@ footer{padding:30px 6%;text-align:center;color:var(--muted);font-size:13px}
 <script src="products.js"></script>
 <script>
 function renderProducts(){
-  const box=document.getElementById("products");
-  box.innerHTML=PRODUCTS.map((p,i)=>`\
+  const box = document.getElementById("products");
+
+  box.innerHTML = PRODUCTS.map((p,i) => {
+
+    const photos = p.images
+      ? p.images.map(img => `
+          <img src="${img}" alt="${p.name}">
+        `).join("")
+      : `<img src="${p.image}" alt="${p.name}">`;
+
+    return `
+      <article class="card">
+        <div class="product-photos">
+          ${photos}
+        </div>
+
+        <div class="card-body">
+          <h3>${p.name}</h3>
+          <div class="price">₹${Number(p.price).toLocaleString("en-IN")}</div>
+          <p class="small">${p.description}</p>
+          <a class="btn" href="#order"
+             onclick="selectProduct(PRODUCTS[${i}].name)">
+             Order this
+          </a>
+        </div>
+      </article>
+    `;
+  }).join("");
+}
     <article class="card">\
       <img src="${p.image}" alt="${p.name}">\
       <div class="card-body">\
